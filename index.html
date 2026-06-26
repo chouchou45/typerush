@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>⌨️ TypeRush</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>⌨️ TypeRush</h1>
+
+<p class="subtitle">
+Teste ta vitesse de frappe !
+</p>
+
+<div class="top">
+
+<div class="level">
+
+<label>Niveau</label>
+
+<select id="level">
+
+<option value="easy">Facile</option>
+<option value="medium">Moyen</option>
+<option value="hard">Difficile</option>
+
+</select>
+
+</div>
+
+<div class="best">
+
+🏆 Meilleur :
+<span id="bestScore">0</span> WPM
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<div id="textDisplay" class="text"></div>
+
+<textarea
+id="textInput"
+placeholder="Commence à taper ici..."
+autocomplete="off"
+spellcheck="false"
+></textarea>
+
+<div class="stats">
+
+<div class="card">
+
+<h3>⏱ Temps</h3>
+
+<p id="timer">
+0 s
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⚡ WPM</h3>
+
+<p id="wpm">
+0
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎯 Précision</h3>
+
+<p id="accuracy">
+100%
+</p>
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button id="restart">
+
+🔄 Rejouer
+
+</button>
+
+</div>
+
+<div id="message"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
